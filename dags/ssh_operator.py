@@ -10,7 +10,6 @@ default_args = {
 
 dag = DAG(
     dag_id='ssh',
-    owner='Airflow'
     default_args=default_args,
     schedule_interval=None,
 )
