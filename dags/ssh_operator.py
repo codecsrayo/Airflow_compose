@@ -10,14 +10,13 @@ default_args = {
 
 dag = DAG(
     dag_id='ssh',
-    owner='Mercadeo'
+    owner='Airflow'
     default_args=default_args,
     schedule_interval=None,
 )
 
 start_task = DummyOperator(
     task_id='start_task',
-     owner='Mercadeo',
     dag=dag,
 )
 
